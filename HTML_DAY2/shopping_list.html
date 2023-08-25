@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping List</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/263/263142.png" type="image/icon" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #c0b38e;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+      }
+      h2 {
+        color: DarkSlateGray;
+      }
+      table {
+        width: 50%;
+        border-collapse: separate;
+        /* Add this to achieve separate borders */
+        border-spacing: 0;
+      }
+      #table-body th,
+      #table-body td {
+        padding: 5px;
+        border: 1px solid #7b3a17;
+        text-align: center;
+      }
+      #table-footer td {
+        color: rgb(186, 184, 184);
+      }
+      #table-footer th {
+        color: rgb(255, 255, 255);
+      }
+
+      a {
+        text-decoration: none;
+        color: #58ac56;
+      }
+      footer {
+        background-color: #313131;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To Buy List</h1>
+    <h2>Description List</h2>
+    <dl>
+      <dt><strong>Mandatory things</strong></dt>
+      <dd>Things that you have to buy 1st before buying other things.</dd>
+      <dt><strong>Optional things</strong></dt>
+      <dd>Buy it or not, theres no regret.</dd>
+    </dl>
+    <h2>Items to Buy</h2>
+    <table id="table-body">
+      <tr>
+        <th>Item</th>
+        <th>Amount</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://content2.kawasaki.com/ContentStorage/KMI/Products/5002/cb973d70-535b-4a77-b09e-2c00f93f9fce.png?w=767"
+            alt="Mandatory"
+            height="100"
+          />
+          <figcaption>Kawasaki z1000</figcaption>
+        </td>
+        <td>1</td>
+        <td>Rp. 400.000.000</td>
+        <td>Rp. 400.000.000</td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://4.bp.blogspot.com/-suTkkJNnws8/XLKz_-ewhsI/AAAAAAAAFMs/b1h0R_rSikMxzCgk1K12sqzBXNPTluU2wCLcBGAs/s1600/3a005c98708dc41ddf7c8a3d96b8ddfa.jpg"
+            alt="Item 2"
+            height="100"
+          />
+          <figcaption>Shoei MM rodeo 2019</figcaption>
+        </td>
+        <td>1</td>
+        <td>Rp. 25.000.000</td>
+        <td>Rp. 25.000.000</td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0611/3882/9547/products/2297158_1024x1024.png?v=1645403391"
+            alt="Alpinestars GP Tech v2"
+            height="50"
+          />
+          <figcaption>Alpinestars GP Tech V2</figcaption>
+        </td>
+        <td>1</td>
+        <td>Rp. 4.000.000</td>
+        <td>Rp. 4.000.000</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <h3>Variety Items</h3>
+          <ul>
+            <li type="1">
+              Exhaust Option:
+              <ol type="A">
+                <li>Akrapovic</li>
+                <li>Termignoni</li>
+                <li>SC Project</li>
+              </ol>
+            </li>
+            <li type="1"><strong>Tire:</strong></li>
+            <ol type="A">
+              <li>Battlax</li>
+              <li>Michellin</li>
+            </ol>
+            <li type="1">
+              <strong>Body:</strong>
+              <ol type="A">
+                <li>Custom cutting sticker</li>
+                <li>Paint</li>
+              </ol>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <br />
+  <br />
+  <footer>
+    <br />
+    <table id="table-footer">
+      <tr>
+        <th>Contact</th>
+        <th>More</th>
+      </tr>
+      <tr>
+        <td>&#9993; arijohand25@gmail.com</td>
+        <td>
+          <a href="#">Privacy Policy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>&#9742; 081389934031</td>
+        <td>
+          <a href="#">Terms of Use</a>
+        </td>
+      </tr>
+      <tr>
+        <td>&#128204; Yogyakarta</td>
+        <td><a href="#">Contact Us</a></td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <p style="color: lightslategrey">&copy; 2023 HTML Task Day 2 Shopping LIst. All rights not reserved.</p>
+  </footer>
+</html>
