@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Item</title>
+    <link rel="icon" href="./assets/images/online-shopping_3081648.png" type="image/icon" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="font-size: 10px">FREE SHIPPING WITH MINIMUM PURCHASE IDR 250.000 USE CODE "FREEONGKIRBOSKU"!!</h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="/CSSFINAL/html/shopping-list.html">Shopping List</a>
+        <a href="/CSSFINAL/html/about-me.html">About Me</a>
+        <a href="/CSSFINAL/html/contact-me.html">Contact Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="add-item">
+        <div class="form-container">
+          <div class="product-dummy">
+            <div class="product-image">
+              <img
+                class="image-a img-small"
+                src="https://cdn.shopify.com/s/files/1/2358/2817/products/DunkHighPanda.png?v=1654761330"
+                alt="Nike Dunk Low Panda"
+              />
+              <img
+                class="image-b img-small"
+                src="https://cdn.shopify.com/s/files/1/2358/2817/products/dunk-low-black-white-564324.png?v=1638813882&width=1940"
+                alt="Product Hover 2"
+              />
+            </div>
+            <div class="product-details">
+              <h3>Nike Dunk Low Panda</h3>
+              <p><strong>Price: IDR 2.449.000</strong></p>
+            </div>
+          </div>
+          <div class="form-section">
+            <h2>Checkout Now!</h2>
+            <form>
+              <label for="fullName">Full Name:</label>
+              <input type="text" id="fullName" name="fullName" required />
+
+              <label>Gender:</label>
+              <div class="gender-options">
+                <label><input type="radio" name="gender" value="Mr" required /> Mr</label>
+                <label><input type="radio" name="gender" value="Mrs" required /> Mrs</label>
+              </div>
+
+              <label for="address">Address:</label>
+              <textarea id="address" name="address" required></textarea>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="phoneNumber">Phone Number:</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+              <div class="data-valid">
+                <input type="checkbox" id="dataValid" name="dataValid" required />
+                <label for="dataValid">All data is valid</label>
+              </div>
+
+              <button type="submit">Order Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Shopping Paradise</p>
+    </footer>
+  </body>
+</html>

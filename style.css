@@ -1,0 +1,488 @@
+/* INDEX.HTML */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes colorChange {
+  0%,
+  100% {
+    color: white; /* change to white */
+  }
+  50% {
+    color: #cdb730; /* change color here */
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Karla', sans-serif;
+}
+
+header {
+  background: #cdb730;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* property to control stacking. only works on element that have other than static */
+}
+
+.video-home {
+  flex: 1;
+  padding-right: 20px;
+  margin-top: 10%;
+}
+
+/* Style navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  text-decoration: none;
+  animation: colorChange 1s infinite; /* put colorChanging here*/
+  height: 5vh;
+}
+
+/* Apply subtle shadow to main */
+main {
+  padding: 2rem;
+}
+
+/* Style the intro section */
+.intro,
+.featured-products {
+  text-align: center; /* center text content */
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc; /* thin line divider */
+}
+
+/* Style the featured products section */
+.featured-products {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.product-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Style individual product cards */
+.product-card {
+  display: flex;
+  background-color: #cdb730;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 4px 10px rgba(194, 197, 11, 0.881);
+  margin-bottom: 2rem;
+  width: 450px;
+  transform: scale(1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-small {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+  margin-bottom: 1rem;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.product-card .image-b {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* image disappear when hovering */
+.product-card:hover .image-a {
+  opacity: 0;
+}
+
+/* image appear when hovering */
+.product-card:hover .image-b {
+  opacity: 1;
+}
+
+.product-card .product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card h3 {
+  color: #3a3a3a;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.web-description {
+  text-align: center;
+  margin: 2rem 0;
+  color: #7777;
+}
+
+.web-description h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.web-description .description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  background-color: #cdb730;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+}
+
+/* --------------------------- SHOPPING LIST.HTML ---------------------------------- */
+
+.shopping-list {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+  margin: 2rem auto;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.item-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  width: 30%; /* Distribute items in 3 columns with spacing */
+  transform: scale(1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px #cdb730;
+}
+
+.item-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.item-card h3 {
+  color: #3a3a3a;
+  margin-bottom: 0.5rem;
+}
+
+.item-card p {
+  position: relative;
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 0.8rem;
+}
+
+.item-card button {
+  background-color: #cdb730;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.item-card button:hover {
+  background-color: #b5a42c;
+}
+
+.item-card .image-b {
+  position: absolute;
+  top: 25px;
+  left: 110px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* to change image when hovering */
+.item-card:hover .image-a {
+  opacity: 0;
+}
+.item-card:hover .image-b {
+  opacity: 1;
+}
+
+/*---------------------- ADD_ITEM.HTML ------------------ */
+
+.add-item {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.form-container h2 {
+  color: #3a3a3a;
+  margin-bottom: 1rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.form-container label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container .gender-options {
+  display: flex;
+  margin-right: 1rem;
+  gap: 1rem; /* Added gap between options */
+  margin-bottom: 1rem;
+}
+
+.form-container .data-valid {
+  display: flex;
+  align-items: center;
+}
+
+.form-container .data-valid input {
+  margin-right: 0.25rem;
+}
+
+.product-dummy {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 4px 10px rgba(194, 197, 11, 0.881);
+
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.product-dummy .product-image {
+  margin-bottom: 1rem;
+}
+
+.product-dummy .product-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-dummy .product-details h3 {
+  color: #3a3a3a;
+  margin-bottom: 0.5rem;
+}
+
+.product-dummy .product-details p {
+  color: #777;
+  font-size: 0.9em;
+}
+
+footer {
+  background-color: #cdb730;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* ------------------------ ABOUT ME.HTML ---------------------- */
+
+.about-me {
+  text-align: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 100vw;
+  margin-right: 2rem;
+}
+
+.profile-image img {
+  /* max-width: 100vw; */
+  width: 100vw;
+  height: 50vh;
+}
+
+.profile-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.profile-details h3 {
+  color: #3a3a3a;
+  margin-bottom: 1rem;
+}
+
+.profile-details p {
+  color: #89bac9;
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+  padding-top: 11px;
+}
+
+.long-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.long-line::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #89bac9;
+}
+
+.founder-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.founder-container img {
+  max-width: 40%;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.founder-container .about-founder {
+  flex: 1;
+  max-width: 55%;
+}
+
+.founder-container .about-founder p {
+  margin-top: 0; /* Remove default margin */
+}
+
+/* ---------------------Contact Us ----------------------- */
+
+.contact-me {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.contact-container h2 {
+  color: #3a3a3a;
+  margin-bottom: 1rem;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.contact-container label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-container button {
+  background-color: #cdb730;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact-container button:hover {
+  background-color: #b5a42c;
+}
