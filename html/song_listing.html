@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Song List</title>
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #2e3d48;
+        margin: 0;
+        padding: 0;
+        color: #ffffff; /* Text color */
+      }
+
+      nav {
+        background-color: #94a8bc;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+      }
+      dt {
+        font-weight: bold;
+        margin-top: 15px;
+        color: #ffcd38;
+      }
+      dd {
+        margin-bottom: 20px;
+        color: #ccc;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(237, 0, 225, 0.92);
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #2c3e50; /* Slightly darker blue */
+        color: #ffcd38; /* Yellow */
+      }
+      th,
+      td {
+        border: 1px solid #34495e; /* Lighter blue */
+      }
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        padding: 10px;
+        background-color: #1c2833; /* Darker blue */
+        color: #ccc; /* Light gray */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="profile.html">
+        <img src="https://www.shareicon.net/data/512x512/2015/11/03/666237_tools_512x512.png" style="width: 50px" ; />
+      </a>
+      <a href="song_listing.html">
+        <img src="../assets/img/melody.png" style="width: 50px" />
+      </a>
+
+      <a href="album_preview.html">
+        <img
+          src="https://placeit-assets1.s3-accelerate.amazonaws.com/custom-pages/album-cover-maker/Album-Cover-Maker-Templates.png"
+          style="width: 50px"
+        />
+      </a>
+    </nav>
+    <h1>Your List Song!</h1>
+    <table>
+      <tr>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Duration</th>
+        <th>Artist</th>
+        <th>MV</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="../assets/img/believer.jpeg" style="width: 150px" />
+        </td>
+        <td>Believer</td>
+        <td>3:24</td>
+        <td>Imagine Dragon</td>
+        <td>
+          <iframe
+            width="250px"
+            src="https://www.youtube.com/embed/A1lwAkBxvKA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="../assets/img/walking_the_wire.jpeg" style="width: 150px" />
+        </td>
+        <td>Walking The Wire</td>
+        <td>3:53</td>
+        <td>Imagine Dragon</td>
+        <td>
+          <iframe
+            width="250px"
+            src="https://www.youtube.com/embed/Gs0QxpsRzVQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="../assets/img/whatever_it_take.jpg" style="width: 150px" />
+        </td>
+        <td>Whatever It Takes</td>
+        <td>3:21</td>
+        <td>Imagine Dragon</td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+  <footer>&copy; 2023 Songify! All rights reserved.</footer>
+</html>
