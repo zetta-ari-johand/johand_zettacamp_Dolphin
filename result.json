@@ -1,0 +1,49 @@
+{
+  "random playlist less than 1 hour": {
+    "message": "Total duration: 59 minutes and 53 seconds with total songs played: 7",
+    "songList": [
+      {
+        "title": "Dont Stop Me Now",
+        "artist": "Queen",
+        "genre": "Rock",
+        "duration": "9:31"
+      },
+      {
+        "title": "Without Me",
+        "artist": "Eminem",
+        "genre": "Rap",
+        "duration": "14:52"
+      },
+      {
+        "title": "Love Me Like Theres No Tomorrow",
+        "artist": "Queen",
+        "genre": "Rock",
+        "duration": "13:52"
+      },
+      {
+        "title": "Radio Ga Ga",
+        "artist": "Queen",
+        "genre": "Rock",
+        "duration": "4:29"
+      },
+      {
+        "title": "Slow Dancing In the Dark",
+        "artist": "Joji",
+        "genre": "Indie",
+        "duration": "8:29"
+      },
+      {
+        "title": "Adelaide Sky",
+        "artist": "Aditya Sofyan",
+        "genre": "Pop",
+        "duration": "4:54"
+      },
+      {
+        "title": "Love of My Life",
+        "artist": "Queen",
+        "genre": "Rock",
+        "duration": "3:46"
+      }
+    ]
+  }
+}
